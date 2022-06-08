@@ -3,6 +3,7 @@ import React from 'react'
 
 import {About,Footer,Header,Skills,Testimonial,Work} from './container'
 import { NavBar } from './components'
+import './App.scss'
 
 const App = () => {
   return (
@@ -18,4 +19,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
