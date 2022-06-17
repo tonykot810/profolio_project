@@ -9,7 +9,7 @@ const AppWrap = (Compnent, idName, classNames) => function HOC() {
             <Compnent />
 
             <div className="copyright">
-                <p className="p-text">@2022 Tony</p>
+                <p className="p-text">@2022 TonyKot</p>
                 <p className="p-text">All right reserved</p>
             </div>
         </div>
