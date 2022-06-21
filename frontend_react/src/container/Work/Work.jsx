@@ -1,5 +1,5 @@
 import React , {useState, useEffect} from 'react'
-import {AiFillEye, AiFillGithub, AiFillGitlab} from 'react-icons/ai'
+import {AiFillEye, AiFillGithub, AiFillYoutube} from 'react-icons/ai'
 import { animate, motion } from 'framer-motion'
 
 
@@ -41,7 +41,7 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
+      <h2 className="head-text">My <span>Portfolio </span>Section</h2>
 
       <div className="app__work-filter">
         {['Unity', 'AR/VR', 'Motion Capture', 'React', 'All'].map((item, index) => (
@@ -72,6 +72,7 @@ const Work = () => {
                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
                 className="app__work-hover app__flex"
               >
+                {work.projectLink ? 
                 <a href={work.projectLink} target="_blank" rel="noreferrer">
 
                   <motion.div
@@ -80,9 +81,11 @@ const Work = () => {
                     transition={{ duration: 0.25 }}
                     className="app__flex"
                   >
-                    <AiFillEye />
+                    <AiFillYoutube />
                   </motion.div>
                 </a>
+                : <></>}
+                {work.codeLink ? 
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
@@ -93,6 +96,7 @@ const Work = () => {
                     <AiFillGithub />
                   </motion.div>
                 </a>
+                : <></>}
               </motion.div>
             </div>
 
