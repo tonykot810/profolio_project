@@ -135,6 +135,15 @@
       width: 70px;
       height: 70px;
     }
+    div:nth-child(4) {
+      width: 100px;
+      height: 100px;
+    }
+    div:nth-child(5) {
+      margin: 1.75rem;
+      width: 150px;
+      height: 150px;
+    }
   
     @media screen and (min-width: 2000px) {
       div:nth-child(2) {
@@ -150,6 +159,14 @@
       div:nth-child(1) {
         width: 200px;
         height: 200px;
+      }
+      div:nth-child(4) {
+        width: 200px;
+        height: 200px;
+      }
+      div:nth-child(5) {
+        width: 400px;
+        height: 400px;
       }
     }
   
