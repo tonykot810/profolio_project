@@ -11,6 +11,10 @@ import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import unity from '../assets/unity.png';
 import cocos2dx from '../assets/cocos2dx.jpg';
+import lua from '../assets/Lua-Logo.svg';
+import sanity from '../assets/sanity.png';
+
+
 
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
@@ -30,4 +34,6 @@ export default {
   cocos2dx,
   circle,
   logo,
+  lua,
+  sanity,
 };
